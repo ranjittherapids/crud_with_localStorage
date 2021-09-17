@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.crud_container{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ////////////for saech container.///////////// */
+.search_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.search_container>input{
+    width: 50%;
+    padding: 15px 20px;
+    border-width: .5px;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.search_container>button{
+    background: rgb(207, 216, 218);
+   padding: 5px;
+}
+
+.crud_box{
+    padding: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+}
+@media screen and (max-width:900px){
+    .crud_box{
+        grid-template-columns: auto;
+    }
+}
+.crud_box>form{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .5rem .5rem 1rem 0 gray;
+    padding: 20px;
+}
+.crud_box>form>input{
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    outline: none;
+    padding: 10px 15px;
+    margin: 10px;
+}
+.crud_box>form>button{
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    font-size: 2rem;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.crud_box>table>thead>tr>th,.crud_box>table>tbody{
+    font-size: 1.5rem;
+
+    background: #e9f0ea;
+    padding: 10px;
+}
+.crud_box>table>tbody>tr{
+    text-align: center;
+    word-wrap: break-word;
+    text-decoration: none;
+}
